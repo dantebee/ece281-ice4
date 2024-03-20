@@ -11,8 +11,8 @@
 --| ---------------------------------------------------------------------------
 --|
 --| FILENAME      : stoplight_fsm.vhd
---| AUTHOR(S)     : Capt Phillip Warner, Capt Dan Johnson
---| CREATED       : 02/22/2018, Last Modified 06/24/2020 by Capt Dan Johnson
+--| AUTHOR(S)     : Dante Benedetti
+--| CREATED       : 3/19/2024
 --| DESCRIPTION   : This module file implements solution for the HW stoplight example using 
 --|				  : direct hardware mapping (registers and CL) for BINARY encoding.
 --|               : Reset is asynchronous with a default state of yellow.
@@ -75,7 +75,6 @@ architecture stoplight_fsm_arch of stoplight_fsm is
 	
 	signal f_Q : std_logic_vector(1 downto 0) := "10";
     signal f_Q_next : std_logic_vector(1 downto 0) := "10";
-    --signal C : std_logic;
   
 begin
 	-- CONCURRENT STATEMENTS ----------------------------
